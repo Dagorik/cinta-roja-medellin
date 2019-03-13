@@ -23,5 +23,8 @@ module.exports = {
         }else{
             res.status(400).send({message:'Usuario no existe'})
         }
+    },
+    updateUser: (req,res) => {
+        res.send(req.user)
     }
 }
