@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 
 app.get('/',(req,res) => {
-    res.send({message:'Server on'})
+    res.send({message:'Server -------'})
 });
 
 app.post('/api/v1/create/user',(req,res) => {
@@ -117,7 +117,6 @@ app.get('/api/v1/trabajo',(req,res) => {
         });
 });
 
-app.listen(PORT,() => {
-    console.log(`Server on port ${PORT}`);
-});
 
+
+module.exports  = app;
